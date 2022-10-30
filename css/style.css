@@ -1,0 +1,242 @@
+.background {
+    height: 100vh;
+    width: 100vw;
+    background: url(../img/back.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.road {
+    height: 339px;
+    width: 500%;
+    display: block;
+    background-image: url(../img/road.png.jpg);
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    animation: road 4s linear infinite;
+}
+
+@keyframes road {
+    100% {
+        transform: translateX(-3500px);
+    }
+}
+
+.trees {
+    height: 800px;
+    width: 500%;
+    display: block;
+    background-image: url(../img/trees.jpg);
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 168px;
+    z-index: 1;
+    animation: trees 15s linear infinite;
+}
+
+@keyframes trees {
+    100% {
+        transform: translateX(-1400px);
+    }
+}
+
+.car {
+    width: 600px;
+    left: 45%;
+    bottom: 50px;
+    transform: translateX(-70%);
+    position: absolute;
+    z-index: 3;
+}
+
+.car img {
+    width: 150%;
+}
+
+.wheel {
+    left: 50%;
+    bottom: 200px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 4;
+}
+
+.wheel img {
+    width: 140px;
+    height: 140px;
+    animation: wheel 3s linear infinite;
+}
+
+.wheel__front {
+    left: 95px;
+    bottom: 6px;
+    position: absolute;
+}
+
+.wheel__back {
+    left: -395px;
+    bottom: 8px;
+    position: absolute;
+}
+
+@keyframes wheel {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.chornobayev {
+    left: 50%;
+    bottom: 200px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 1;
+}
+
+.chornobayev img {
+    width: 80px;
+    height: 75px;
+}
+
+.chornobayev__img {
+    left: -130px;
+    bottom: 170px;
+    position: absolute;
+}
+
+.window {
+    left: 50%;
+    bottom: 300px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: -1;
+}
+
+.car:hover .window__img {
+    bottom: -400px;
+    left: -300px;
+    transition: all 1.5s;
+
+}
+
+.window img {
+    width: 920px;
+    height: 560px;
+}
+
+.window__img {
+    left: -305px;
+    bottom: -340px;
+    position: absolute;
+}
+
+.dydka {
+    left: 50%;
+    bottom: 200px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.dydka img {
+    width: 80px;
+    height: 75px;
+}
+
+.dydka__img {
+    left: -230px;
+    bottom: 175px;
+    position: absolute;
+}
+
+
+
+.clouds {
+    left: 1900px;
+    top: -300px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.clouds img {
+    width: 1000px;
+    height: 400px;
+    animation: clouds 7s linear infinite;
+
+}
+
+.clouds__img {
+    left: 100px;
+    top: 175px;
+    position: absolute;
+}
+
+@keyframes clouds {
+    100% {
+        transform: translateX(-3200px)
+    }
+}
+
+.bayraktar {
+    left: 0px;
+    top: -90px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 1;
+    transition-duration: z-index;
+}
+
+
+
+.bayraktar img {
+    width: 300px;
+    height: 200px;
+    animation: bayraktar 7s linear infinite;
+}
+
+.bayraktar__img {
+    left: 100px;
+    top: 175px;
+    position: absolute;
+}
+
+@keyframes bayraktar {
+    0% {
+        transform: translateX(0px)
+    }
+
+    50% {
+        transform: translateX(1300px)
+    }
+
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+.controler {
+    left: 50%;
+    bottom: 200px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.controler img {
+    width: 80px;
+    height: 75px;
+
+}
+
+.controler__img {
+    left: -270px;
+    bottom: 165px;
+    position: absolute;
+}
